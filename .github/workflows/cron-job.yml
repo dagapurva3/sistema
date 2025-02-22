@@ -2,7 +2,6 @@ name: API Cron Job
 
 on:
   schedule:
-    # Runs every hour (customize with cron syntax)
     - cron: "*/5 * * * *"
   workflow_dispatch:
 
@@ -12,6 +11,5 @@ jobs:
     steps:
       - name: Call API
         run: |
-          # Use curl or a script to call your API
+          date # Add date logging
           curl -X GET "https://sistema-prod.vercel.app/api/reminders"
-       
