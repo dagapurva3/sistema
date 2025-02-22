@@ -3,7 +3,7 @@ name: API Cron Job
 on:
   schedule:
     # Runs every hour (customize with cron syntax)
-    - cron: "*/2 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 jobs:
