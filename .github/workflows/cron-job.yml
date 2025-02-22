@@ -4,7 +4,7 @@ on:
   schedule:
     # Runs every hour (customize with cron syntax)
     - cron: "*/2 * * * *"
-  # workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   call-api:
