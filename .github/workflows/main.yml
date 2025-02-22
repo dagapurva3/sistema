@@ -1,0 +1,16 @@
+name: API Cron Job
+
+on:
+  schedule:
+    # Runs every hour (customize with cron syntax)
+    - cron: "55 * * * *"
+
+jobs:
+  call-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call API
+        run: |
+          # Use curl or a script to call your API
+          curl -X GET "https://sistema-prod.vercel.app/api/reminders"
+       
